@@ -1,0 +1,15 @@
+{
+  "name": "smartpark",
+  "version": "1.0.0",
+  "description": "SmartPark - Run both frontend and backend with one command",
+  "scripts": {
+    "install:all": "npm install --prefix smartpark-backend && npm install --prefix smartpark-frontend",
+    "seed": "npm run seed --prefix smartpark-backend",
+    "dev": "concurrently --kill-others-on-fail --prefix-colors \"cyan,magenta\" --names \"BACKEND,FRONTEND\" \"npm run dev --prefix smartpark-backend\" \"npm start --prefix smartpark-frontend\"",
+    "setup": "npm install && npm run install:all && npm run seed",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
