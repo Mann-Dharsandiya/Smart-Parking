@@ -13,6 +13,7 @@ React + Node.js + MongoDB + Socket.IO — runs with a **single command**.
 
 > Install both, then follow the steps below.
 
+
 ---
 
 ## 🚀 Run the Entire App — ONE Terminal
